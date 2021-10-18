@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VP</title>
+    <link rel="stylesheet" href="./styles.css">
+    <audio data-key='75' src='sound/a.mp3'></audio>
+    <audio data-key='79' src='sound/a♯.mp3'></audio>
+    <audio data-key='76' src='sound/b.mp3'></audio>
+    <audio data-key='68' src='sound/c.mp3'></audio>
+    <audio data-key='82' src='sound/c♯.mp3'></audio>
+    <audio data-key='70' src='sound/d.mp3'></audio>
+    <audio data-key='84' src='sound/d♯.mp3'></audio>
+    <audio data-key='71' src='sound/e.mp3'></audio>
+    <audio data-key='72' src='sound/f.mp3'></audio>
+    <audio data-key='85' src='sound/f♯.mp3'></audio>
+    <audio data-key='74' src='sound/g.mp3'></audio>
+    <audio data-key='73' src='sound/g♯.mp3'></audio>
+    <script src="./script.js" defer></script>
+    <script src="./fullScreen.js" defer></script>
+    <script src="./switchKeyboard.js" defer></script>
+</head>
+<body>
+        <Section class="header">
+            <div class="wrapper-header">
+                <button class="btnFullScreen" >
+               <img src='./assets/switch-to-full-screen-button.svg' alt="btnFullScreen" width="50px" height="50 px">
+            </button>
+            <div class="header">
+                <button class="btnLetters" data-key="btnLetters">Letters</button>
+                <button class="btnNotes" data-key="btnNotes">Notes</button>
+            </div> 
+            </div>
+            
+        </Section>
+        <Section class="fieldPlay">
+            <button data-key="68" class="key" data-key='68'>
+                <span class="sound"></span>
+                <p>D</p>  
+            </button>
+            <button data-key="70" class="key">
+                <p>F</p>
+            </button>
+            <button data-key="71" class="key">
+                <p>G</p>
+            </button>
+            <button  data-key="72" class="key">
+                <p>H</p>
+            </button>
+            <button data-key="74" class="key">
+                <p>J</p>
+            </button>
+            <button  data-key="75" class="key">
+                <p>K</p>
+            </button>
+            <button data-key="76" class="key">
+                L
+            </button>
+            <div class="sharpKeys">
+                <button data-key="82" class="sharp">R</button>
+                <button data-key="84" class="sharp">T</button>
+                <button  class="sharp-none"></button>
+                <button data-key="85" class="sharp">U</button>
+                <button data-key="73" class="sharp">I</button>
+                <button data-key="79" class="sharp">O</button>
+            </div>
+        </Section>
+     
+</body>
+</html>
